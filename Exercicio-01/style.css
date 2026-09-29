@@ -1,0 +1,146 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+line-height: 1.6;
+color: #333;
+background-color: #87a3be;
+}
+
+header {
+background-color: #172554;
+color: white;
+text-align: center;
+padding: 40px 20px;
+}
+
+h1 {
+font-size: 2.5rem;
+margin-bottom: 10px;
+}
+
+header p {
+font-size: 1.2rem;
+margin-bottom: 25px;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+margin: 0 10px;
+font-weight: bold;
+}
+
+nav a:hover {
+color: #93c5fd;
+}
+
+main {
+max-width: 900px;
+margin: 30px auto;
+padding: 0 20px;
+}
+
+/* BOX DAS SEÇÕES */
+.info-box {
+background-color: #f1f5f9;
+border: 2px solid #2563eb;
+border-radius: 10px;
+padding: 30px;
+margin-bottom: 25px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* TÍTULOS */
+.info-box h2 {
+color: #172554;
+margin-bottom: 20px;
+border-bottom: 2px solid #2563eb;
+padding-bottom: 8px;
+}
+
+/* IMAGEM */
+.info-box img {
+width: 200px;
+height: 200px;
+object-fit: cover;
+border-radius: 50%;
+display: block;
+margin: 0 auto 20px;
+}
+
+/* PARÁGRAFOS */
+.info-box p {
+margin-bottom: 15px;
+}
+
+/* LISTA */
+ul {
+padding-left: 25px;
+}
+
+li {
+margin-bottom: 8px;
+}
+
+/* PROJETOS */
+article {
+background-color: white;
+border-left: 4px solid #2563eb;
+padding: 15px;
+margin-bottom: 15px;
+border-radius: 5px;
+}
+
+article h3 {
+color: #172554;
+}
+
+article p {
+margin-bottom: 0;
+}
+
+/* LINKS */
+a {
+color: #2563eb;
+}
+
+/* RODAPÉ */
+footer {
+background-color: #172554;
+color: white;
+text-align: center;
+padding: 20px;
+margin-top: 30px;
+}
+
+footer p {
+margin: 0;
+}
+
+/* CELULAR */
+@media (max-width: 600px) {
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav a {
+    display: block;
+    margin: 8px 0;
+}
+
+.info-box {
+    padding: 20px;
+}
+
+
+}
