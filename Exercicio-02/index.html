@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 02</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <section class="secao">
+        <h1>Bem vindo</h1>
+
+        <p class="info">
+        Faça seu cadastro conosco aqui na <b> Melhor Escola de TI</b>, não perca essa oportunidade e se cadastre o mais rápido possível
+        Possuimos os melhores cursos do mercado.
+        </p>
+        
+        <form id="form" action="#" method="get">
+            <h2>Dados do Aluno</h2>
+
+            <p>
+                <label for="matrícula">Matrícula</label><br>
+                <input type="text" id="matricula" name="matricula" placeholder="Informe a matrícula" size="10"><br>
+            </p>
+
+            <p>
+                <label for="nome">Nome</label><br>
+                <input type="text" id="nome" name="nome" placeholder="Informe o nome" size="20"><br>
+            </p>
+
+            <p>
+                <label for="fone">Telefone</label><br>
+                <input type="text" id="fone" name="fone" placeholder="Informe o telefone"><br>
+            </p>
+
+            <p>
+                <label for="email">Email</label><br>
+                <input type="text" id="email" name="email" placeholder="Informe o email"><br>
+            </p>
+
+            <p>
+                <label class="labelcheckbox" for="curso">Esoclha o curso</label><br>
+                <label class="aviso" for="curso">(máximo 3 cursos)</label><br><br>
+
+                <input type="checkbox" id="uml" name="curso" value="UML">
+                <label for="uml">UML</label><br>
+
+                <input type="checkbox" id="testes" name="curso" value="TESTES">
+                <label for="testes">Treinamento Testes</label><br>
+
+                <input type="checkbox" id="html" name="curso" value="HTML">
+                <label for="html">Treinamento HTML</label><br>
+
+                <input type="checkbox" id="css" name="curso" value="CSS">
+                <label for="css">Treinamento CSS</label><br>
+
+                <input type="checkbox" id="js" name="curso" value="JS">
+                <label for="js">Treinamento Javascript</label><br>
+
+                <input type="checkbox" id="devops" name="curso" value="Devops">
+                <label for="devops">Treinamento Devops</label><br>
+
+                
+            </p>
+
+            <p>
+                <label for="local">Escolha o local</label><br><br>
+
+                <select id="local" name="local">
+                    <option value="0">Selecione o local:</option>
+                    <option value="CENTRO">Centro</option>
+                    <option value="FUNCIONARIOS">Funcionarios</option>
+                    <option value="STAEFIGENIA">Sta Efigênia</option>
+                    <option value="SAVASSI">Savassi</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="radio">Escolha o Tipo de Pagamento</label><br><br>
+
+                <input type="radio" id="pix" name="tipopg" value="PIX">
+                <label for="pix">PIX</label><br>
+
+                <input type="radio" id="debito" name="tipopg" value="DEBITO">
+                <label for="debito">Débito</label><br>
+
+                <input type="radio" id="debito" name="tipopg" value="DINHEIRO">
+                <label for="debito">Dinheiro/Espécie</label><br>
+
+                <input type="radio" id="debito" name="tipopg" value="CREDITO">
+                <label for="credito">Crédito</label><br>
+            </p>
+
+            <p>
+                <label for="">Informe sua formação básica</label><br><br>
+                <textarea class="conhecimento" name="conhecimento" 
+                    id="conhecimento" cols="20" rows="5"
+                    title="Informe seu conhecimento(opcional), máximo 5 linhas">
+                </textarea>
+            </p>
+
+            <p>
+                <label>Confirme ou altere a data do cadastro:</label><br>
+                <input type="date" id="dataCadastro">
+            </p>
+
+            <script>
+                const hoje = new Date();
+                const formatoISO = hoje.toISOString().split('T')[0];
+                document.getElementById('dataCadastro').value = formato;
+            </script>
+
+            <p>
+                <input type="reset" value=""Cancelar&nbsp&nbso&nbsp" title="Limpar dados">
+                <input type="submit" value="Confirmar" title="Enviar dados">
+            </p>
+
+            <p>
+                <input type="reset" value=""Cancelar&nbsp&nbso&nbsp" title="Limpar dados">
+                <input type="submit" value="Cancelar" title="Enviar dados">
+            </p>
+
+        </form>
+
+        <div class="separador"></div>
+        <section class="rodape">
+            <footer>
+                <p>
+                    <a href="https://www.w3schools.com/html/html_forms.asp" target="_blank"
+                    alt="">Mais sobre forms clique aqui</a>
+                </p>
+            </footer>
+        </section>
+
+    </section>
+</body>
+</html>
