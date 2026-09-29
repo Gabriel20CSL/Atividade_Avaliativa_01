@@ -1,0 +1,38 @@
+<!DOCTYPE html> <html lang="pt-BR"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Gerador de Tabuada</title> <link rel="stylesheet" href="style.css"> </head> <body>
+<main class="container">
+
+    <section class="tabuada">
+
+        <h1>Gerador de Tabuada</h1>
+
+        <p>Digite um número para gerar sua tabuada de 1 a 10.</p>
+
+        <div class="campo">
+            <label for="numero">Digite um número:</label>
+
+            <input
+                type="number"
+                id="numero"
+                placeholder="Ex: 5"
+            >
+        </div>
+
+        <button onclick="gerarTabuada()">
+            Gerar tabuada
+        </button>
+
+        <button onclick="limparTabuada()">
+            Limpar tabuada
+        </button>
+
+        <div id="resultado" class="resultado">
+            <!-- A tabuada será exibida aqui -->
+        </div>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body> </html>
