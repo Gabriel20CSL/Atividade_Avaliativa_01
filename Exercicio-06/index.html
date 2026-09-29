@@ -1,0 +1,69 @@
+<!DOCTYPE html> <html lang="pt-BR"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Produtos da Loja</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head> <body>
+<main class="container">
+
+    <section class="loja">
+
+        <h1>Produtos da Loja</h1>
+
+        <p>Confira os produtos disponíveis em nossa loja.</p>
+
+
+    
+        <div class="filtro">
+
+            <label for="categoria">
+                Filtrar por categoria:
+            </label>
+
+            <select id="categoria" onchange="filtrarProdutos()">
+
+                <option value="todos">
+                    Todos os produtos
+                </option>
+
+                <option value="eletronicos">
+                    Eletrônicos
+                </option>
+
+                <option value="informatica">
+                    Informática
+                </option>
+
+                <option value="vestuario">
+                    Vestuário
+                </option>
+
+            </select>
+
+        </div>
+
+
+    
+        <div id="listaProdutos" class="produtos">
+            <!-- Os produtos serão exibidos aqui -->
+        </div>
+
+
+      
+        <div class="sem-estoque">
+
+            <h2>Produtos sem estoque</h2>
+
+            <ul id="produtosSemEstoque">
+                
+            </ul>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body> </html>
